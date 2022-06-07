@@ -18,7 +18,7 @@ public class Mario : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        float h = Input.GetAxisRaw("Horizontal");
+        float a = Input.GetAxisRaw("Horizontal");
         myBody.velocity = new Vector2(h*speed,myBody.velocity.y);
 
         if(Input.GetKeyDown(KeyCode.Space))
