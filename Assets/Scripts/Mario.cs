@@ -19,7 +19,7 @@ public class Mario : MonoBehaviour
     void Update()
     {
         float a = Input.GetAxisRaw("Horizontal");
-        myBody.velocity = new Vector2(h*speed,myBody.velocity.y);
+        myBody.velocity = new Vector2(a*speed,myBody.velocity.y);
 
         if(Input.GetKeyDown(KeyCode.Space))
         myBody.velocity += Vector2.up*jumpHeight;
